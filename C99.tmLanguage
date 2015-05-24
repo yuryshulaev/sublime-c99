@@ -535,7 +535,7 @@
 			(\b
 				(?!(while|for|do|if|else|switch|enumerate|return|r?iterate)\s*\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\b | :: )++                  # actual name
 			)
-			 \s*(\()</string>
+			 \s*(?=\()</string>
 					<key>name</key>
 					<string>meta.function-call.c</string>
 				</dict>
@@ -546,11 +546,6 @@
 						<dict>
 							<key>name</key>
 							<string>variable.other.c</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.parameters.c</string>
 						</dict>
 					</dict>
 					<key>match</key>
